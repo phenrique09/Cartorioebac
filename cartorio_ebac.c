@@ -121,6 +121,7 @@ int main() //funçao
 	   printf("\t1 - Registrar nomes\n"); //opçao 1
 	   printf("\t2 - Consultar nomes\n"); //opçao 2
 	   printf("\t3 - Deletar nomes\n\n"); //opçao 3
+	   printf("\t4 - Sair do sistema\n\n"); //opçao 4
 	   printf("Opçao: "); //fim do menu
 	
 	   scanf("%d", &opcao); //armazenando a escolha do usuario
@@ -140,6 +141,12 @@ int main() //funçao
 	   	    case 3: //caso for 3
 	   		deletar();
 	   	    break; //fecha chave
+	   	    
+	   	    case 4: //caso for 4
+	   	    printf("Obrigado por utilizar o sistema!\n"); //comentario
+	   	    return 0; //retorna ao valor 0
+	   	    break; //fecha chave
+	   	    
 	   	    
 	   	    default:   //se nao for nenhuma opçao
 	   	    printf("Essa opção não está disponivel!\n"); //comentario
